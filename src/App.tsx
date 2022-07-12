@@ -1,5 +1,14 @@
+import { ThemeProvider } from 'styled-components';
+
+import { GloblaStyle } from './styles/global';
+import { defaultTheme } from './styles/themes/default';
+
 export function App() {
   return (
-    <h1>Ignite Timer</h1>
+    <ThemeProvider theme={defaultTheme}>
+      <h1>Ignite Timer</h1>
+
+      <GloblaStyle />
+    </ThemeProvider>
   )
 }
